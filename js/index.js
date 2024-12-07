@@ -9,12 +9,18 @@
       timer = null;
   console.log('wat', card);
   openB.addEventListener('click', function () {
+    const id = prompt('Enter my instagram userid to unlock:');
+    const realID = 'fascinator_tarun';
+    if(id===realID){
     card.setAttribute('class', 'open-half');
     if (timer) clearTimeout(timer);
     timer = setTimeout(function () {
       card.setAttribute('class', 'open-fully');
       timer = null;
     }, 1000);
+  }else{
+    alert('wrong! try again');
+  }
   });
 
   closeB.addEventListener('click', function () {
