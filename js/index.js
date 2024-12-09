@@ -1,3 +1,5 @@
+import realID from '../gitignore/myFile.js';
+
 (function () {
   function $(id) {
     return document.getElementById(id);
@@ -8,11 +10,11 @@
     closeB = $("close"),
     timer = null;
 
-  console.log("wat", card);
+  // console.log("wat", card);
 
   openB.addEventListener("click", function () {
     const id = prompt("Enter my instagram userid to unlock:");
-    const realID = "fascinator_tarun";
+    
     if (id === realID) {
       card.setAttribute("class", "open-half");
 
